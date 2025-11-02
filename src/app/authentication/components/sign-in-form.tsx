@@ -67,7 +67,7 @@ const SignInForm = () => {
           if (error.error.code === "INVALID_EMAIL_OR_PASSWORD") {
             toast.error("E-mail ou senha inválidos.");
             return form.setError("email", {
-              message: "Email ou senha incorretos",
+              message: "Email ou senha incorretos ",
             });
           }
 
@@ -78,7 +78,7 @@ const SignInForm = () => {
   }
 
   return (
-    <Card>
+    <Card className="w-full ">
       <CardHeader>
         <CardTitle>Entrar</CardTitle>
         <CardDescription>Faça login para continuar.</CardDescription>
