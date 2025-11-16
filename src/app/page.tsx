@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import CategorySelector from "@/components/common/category-selector";
 import Footer from "@/components/common/footer";
+import MarcasIcons from "@/components/common/marcasIcons";
 import ProductList from "@/components/common/product-list";
 import { db } from "@/db";
 import { productTable } from "@/db/schema";
@@ -39,6 +40,10 @@ const Home = async () => {
             sizes="100vw"
             className="h-auto w-full"
           />
+        </div>
+
+        <div>
+          <MarcasIcons />
         </div>
 
         <ProductList products={products} title="Mais vendidos" />
